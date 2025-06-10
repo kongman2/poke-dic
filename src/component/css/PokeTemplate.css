@@ -1,0 +1,36 @@
+.PokeTemplate {
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden;
+}
+
+.PokeTemplate .app-title {
+   background: #393939;
+   color: #ffffff;
+   height: 4rem;
+   font-weight: 800;
+   font-size: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.PokeTemplate .content {
+   background: white;
+}
+
+@media (min-width: 1100px) {
+   .PokeTemplate .app-title {
+      background: #393939;
+      color: #ffffff;
+      height: 8rem;
+      font-weight: 800;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .PokeTemplate .app-title img {
+      width: 50px;
+   }
+}

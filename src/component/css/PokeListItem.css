@@ -1,0 +1,89 @@
+.PokeListItem {
+   width: 80%;
+   padding: 1rem;
+   display: flex;
+   border: 1px solid #d6d6d6;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.PokeListItem:hover {
+   width: 80%;
+   transform: translateY(-6px);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.PokeListItem .onoffcheck button {
+   text-decoration: line-through;
+   width: 70px;
+   margin-right: 10px;
+   padding: 5px;
+   border-radius: 7px;
+   border: none;
+   background-color: #ff9292;
+   color: red;
+   text-align: center;
+}
+
+.PokeListItem .onoffcheck img {
+   width: 100%;
+   filter: grayscale(100%);
+   transition: filter 0.1s ease;
+}
+
+.PokeListItem .onoffcheck {
+   user-select: none;
+   cursor: pointer;
+   align-items: center;
+   color: #91979e;
+   transition: color 0.1s ease-in;
+   text-align: center;
+}
+
+.PokeListItem .onoffcheck.onoff button {
+   text-decoration: none;
+   background-color: #18f0ff;
+   font-weight: bold;
+   color: #000;
+   border: 1px solid #d6d6d6;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.PokeListItem .onoffcheck.onoff button:hover {
+   background-color: #00a6f3;
+   color: red;
+   transform: translateY(-3px);
+   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.PokeListItem .onoffcheck.onoff img {
+   width: 100%;
+   filter: grayscale(0%);
+}
+
+.PokeListItem .onoffcheck.onoff {
+   color: #000;
+   font-weight: bold;
+}
+
+.PokeListItem .remove {
+   transition: color 0.1s ease-in;
+   display: flex;
+   font-size: 1.5rem;
+   color: #d8474f;
+   cursor: pointer;
+}
+
+.PokeListItem .remove:hover {
+   color: #ff8787;
+}
+
+@media (min-width: 431px) {
+   .PokeListItem .onoffcheck {
+      font-size: large;
+   }
+   .PokeListItem .onoffcheck.onoff {
+      font-size: large;
+   }
+}
